@@ -1,0 +1,82 @@
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+h1 {
+  font-family: "Gentium Basic", serif;
+  font-weight: bold;
+  font-size: 3rem;
+
+}
+
+.container {
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+}
+
+header {
+  background-color: white;
+  position: fixed;
+}
+
+nav {
+  justify-content: space-around;
+  align-items: center;
+  height: 4rem;
+}
+
+.icon svg {
+  height: 1.5rem;
+}
+
+#ic-logo {
+  height: 2.25rem;
+}
+
+main {
+  padding-top: 4rem;
+}
+
+article {
+  padding: 2rem 1rem;
+}
+
+.media {
+  width: 100%;
+}
+
+.hero {
+  height: 16rem;
+  overflow: hidden;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.start-learning p {
+  padding-top: 2rem;
+  padding-bottom: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.cta {
+  background-color: grey;
+  text-align: center;
+  padding: 1rem;
+}
+
+.cta span {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+}
