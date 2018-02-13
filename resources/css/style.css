@@ -11,16 +11,27 @@ body {
   background-color: #F7F7F7;
 }
 
-h1 {
+h1, h2 {
   font-family: "Gentium Basic", serif;
   font-weight: bold;
+}
+
+h1 {
   font-size: 3rem;
 }
 
 h2 {
-  font-family: "Gentium Basic", serif;
-  font-weight: bold;
   font-size: 2.5rem;
+  text-align: center;
+}
+
+h3 {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
 }
 
 .container {
@@ -81,7 +92,7 @@ main section:nth-child(odd) {
 }
 
 .hero {
-  height: 16rem;
+  height: 15rem;
   overflow: hidden;
 }
 
@@ -118,13 +129,19 @@ img {
 
 .event-description {
   padding-left: 1rem;
+  padding-top: 1.2rem;
+  line-height: 1.2rem;
+}
+
+.event-description p {
+  padding: 1rem 0;
 }
 
 /* ============================ */
 /* Third Section */
 
-.courses {
-  padding: 1rem;
+.courselist {
+  padding: 2rem 0;
 }
 
 .course {
@@ -132,6 +149,35 @@ img {
   background-color: gray;
 }
 
+.courses {
+  margin-top: 1rem;
+  padding: 0 1rem;
+}
+
 .course + .course {
   margin-top: 0.5rem;
+}
+
+/* ============================ */
+/* Thesis section */
+
+.thesis {
+  padding: 2rem 0rem 1.5rem 0rem;
+}
+
+video {
+  width: 100%;
+  height: auto;
+  margin-top: 1rem;
+}
+
+/* ============================ */
+/* Footer */
+
+footer {
+  width: 100%;
+}
+
+.footer-content p {
+  padding: 1rem 1.5rem;
 }
