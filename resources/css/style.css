@@ -7,17 +7,18 @@ html {
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
-  background-color: #F7F7F7;
+  font-family: "Gentium Basic", serif;
+  background-color: #f7f7f7;
+  color: #4c4c4c;
 }
 
-h1, h2 {
-  font-family: "Gentium Basic", serif;
+h1, h2, h3 {
+  font-family: "Open Sans", sans-serif;
   font-weight: bold;
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 h2 {
@@ -27,7 +28,6 @@ h2 {
 
 h3 {
   font-size: 1.3rem;
-  font-weight: bold;
 }
 
 a {
@@ -36,7 +36,7 @@ a {
 
 .container {
   width: 100%;
-  max-width: 1024px;
+  max-width: 1366px;
   margin: 0 auto;
 }
 
@@ -50,8 +50,10 @@ a {
 
 header {
   width: 100%;
-  background-color: #F7F7F7;
+  background-color: #f7f7f7;
   position: fixed;
+  border-bottom: 0.06rem solid #8d8d8d;
+  z-index: 1;
 }
 
 nav {
@@ -62,6 +64,7 @@ nav {
 
 .icon svg {
   height: 1.5rem;
+  fill: #6c6c6c;
 }
 
 #ic-logo {
@@ -77,8 +80,10 @@ main {
 }
 
 main section:nth-child(odd) {
-  background-color: #E5E3E0;
+  background-color: #ff8a34;
+  color: #fff;
 }
+
 
 /* ============================ */
 /* First section */
@@ -104,33 +109,57 @@ img {
 .hero-content p {
   padding-top: 2rem;
   padding-bottom: 1.5rem;
-  font-size: 1.5rem;
-  font-weight: 600;
+  font-size: 1.6rem;
+  opacity: 0.75;
 }
 
 .cta {
-  background-color: grey;
+  background-color: none;
+  border: 0.08rem solid #fff;
   text-align: center;
   padding: 1rem;
+  transition: all 150ms ease-in-out 35ms;
+  opacity: 0.85;
+}
+
+.cta:hover {
+  background-color: #fff;
+  opacity: 1;
 }
 
 .cta span {
+  font-family: "Open Sans", sans-serif;
   font-size: 1.2rem;
-  font-weight: bold;
-  color: white;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: #fff;
+  transition: all 150ms ease-in-out 35ms;
+}
+
+.cta:hover span {
+  color: #ff8a34;
 }
 
 /* ============================ */
 /* Second section */
 
+.eventlist {
+  padding: 1rem 0;
+}
+
 .event {
-  margin: 1rem 1rem 2rem 1rem;
+  padding: 0 1rem;
+}
+
+.event + .event {
+  margin-top: 2rem;
 }
 
 .event-description {
   padding-left: 1rem;
   padding-top: 1.2rem;
   line-height: 1.2rem;
+  color: #4c4c4c;
 }
 
 .event-description p {
@@ -146,7 +175,6 @@ img {
 
 .course {
   padding: 1rem 1rem 1.5rem 1rem;
-  background-color: gray;
 }
 
 .courses {
@@ -156,6 +184,36 @@ img {
 
 .course + .course {
   margin-top: 0.5rem;
+}
+
+.software {
+  background-image: url("../imgs/bg-course-software.png");
+  background-size: cover;
+}
+
+.computer {
+  background-image: url("../imgs/bg-course-computer-art.png");
+  background-size: cover;
+}
+
+.business {
+  background-image: url("../imgs/bg-course-business.png");
+  background-size: cover;
+}
+
+.data {
+  background-image: url("../imgs/bg-course-data.png");
+  background-size: cover;
+}
+
+.design {
+  background-image: url("../imgs/bg-course-design.png");
+  background-size: cover;
+}
+
+.marketing {
+  background-image: url("../imgs/bg-course-marketing.png");
+  background-size: cover;
 }
 
 /* ============================ */
