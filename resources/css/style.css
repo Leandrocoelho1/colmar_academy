@@ -277,12 +277,6 @@ img {
 }
 
 @media only screen and (min-width:900px) {
-  .events {
-    align-items: flex-start;
-    padding: 2rem 1.5rem;
-    box-sizing: border-box;
-  }
-
   .keep-practicing {
     width: 50%;
     display: flex;
@@ -297,11 +291,6 @@ img {
     text-align: left;
   }
 
-  .eventlist {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-  }
 }
 
 .quote {
@@ -327,35 +316,68 @@ img {
   display: none;
 }
 
+.event-description {
+  padding: 1rem 1rem 0 1rem;
+  line-height: 1.2rem;
+  color: #4c4c4c;
+}
+
+.event-description p {
+  padding: 0.5rem 0;
+}
+
 @media only screen and (min-width:640px) {
-  .event {
+  .eventlist {
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .event {
+    width: 45%;
+  }
+
+  .event + .event {
+    margin-top: 0;
+    padding-left: 0;
+  }
+}
+
+@media only screen and (min-width:900px) {
+  .events {
+    align-items: flex-start;
+    padding: 2rem 1.5rem;
+    box-sizing: border-box;
+  }
+
+  .eventlist {
+    flex-direction: column;
+    flex-wrap: nowrap;
     justify-content: flex-start;
-    width: 100%
+    width: 50%;
   }
 
   .event-img-mobile {
     display: none;
   }
 
-  .event-img-full {
-    display: inline;
-    width: 40%;
-    flex-shrink: 0;
+  .event {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 0;
   }
 
   .event + .event {
-    margin-top: 0;
+    padding-left: 1rem;
   }
-}
 
-@media only screen and (min-width:900px) {
-  .event {
-    padding-top: 0;
-  }
   .event-img-full {
+    display: inline;
     width: 35%;
+    flex-shrink: 0;
   }
 
   .event-description {
@@ -368,16 +390,7 @@ img {
   }
 }
 
-.event-description {
-  padding-left: 1rem;
-  padding-top: 1.2rem;
-  line-height: 1.2rem;
-  color: #4c4c4c;
-}
 
-.event-description p {
-  padding: 1rem 0;
-}
 
 /* ============================ */
 /* Third Section */
@@ -390,11 +403,6 @@ img {
   padding: 1rem 1rem 1.5rem 1rem;
   margin-bottom: 0.5rem;
 }
-
-@media only screen and (min-width:640px) {
-  .course {
-  padding: 2.5rem 1rem 2.5rem 1rem;
-  }
 
 .software {
   background-image: url("../imgs/bg-course-software.png");
@@ -424,6 +432,12 @@ img {
 .marketing {
   background-image: url("../imgs/bg-course-marketing.png");
   background-size: cover;
+}
+
+@media only screen and (min-width:640px) {
+  .course {
+  padding: 2.5rem 1rem 2.5rem 1rem;
+  }
 }
 
 .coursesfull {
@@ -480,7 +494,13 @@ img {
 }
 
 .projects {
-  display: none
+  display:none;
+}
+
+@media only screen and (min-width:640px) {
+  .projects{
+    display: flex;
+  }
 }
 
 @media only screen and (min-width:900px) {
