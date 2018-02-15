@@ -59,6 +59,13 @@ a {
   align-items: center;
 }
 
+@media only screen and (min-width:1000px) {
+  .flex-responsive {
+    display: flex;
+    align-items: center;
+  }
+}
+
 /* =============================================== */
 /* Header */
 /* =============================================== */
@@ -113,7 +120,6 @@ svg:active {
 .main-nav {
   padding-right: 24px;
   justify-content:flex-end;
-  /* transform: translate(0rem, 0.08rem); */
 }
 
 .main-nav a {
@@ -176,7 +182,6 @@ main {
 }
 
 main section:nth-child(odd) {
-  /* background-color: #ff8a34; */
   background: #ffa435;
   background: -moz-linear-gradient(top, #ffa435 0%, #ff8a34 100%);
   background: -webkit-linear-gradient(top, #ffa435 0%,#ff8a34 100%);
@@ -184,14 +189,6 @@ main section:nth-child(odd) {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffa435', endColorstr='#ff8a34',GradientType=0 );
   color: #fff;
 }
-
-@media only screen and (min-width:1000px) {
-  section {
-    display: flex;
-    align-items: center;
-  }
-}
-
 
 /* ============================ */
 /* First section */
@@ -628,6 +625,10 @@ footer {
 }
 
 @media only screen and (min-width:1000px) {
+  footer {
+    border-top: 1px solid #e5e5e5;
+  }
+
   .footer-nav {
     display: flex;
     justify-content: space-between;
