@@ -12,7 +12,11 @@ body {
   color: #4c4c4c;
 }
 
-h1, h2, h3 {
+b {
+  font-weight: bold;
+}
+
+h1, h2, h3, h4 {
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
 }
@@ -29,6 +33,10 @@ h2 {
 
 h3 {
   font-size: 1.3rem;
+}
+
+h4 {
+  padding-top: 0.8rem;
 }
 
 p {
@@ -72,6 +80,10 @@ svg {
   fill: #6c6c6c;
 }
 
+svg:active {
+  fill: #d26400;
+}
+
 #ic-logo {
   height: 2.25rem;
   fill: #d26400;
@@ -82,7 +94,6 @@ svg {
 }
 
 #colmar {
-  /* font-family: "Open sans"; */
   font-size: 1.7rem;
   font-weight: bold;
   padding-left: 0.35rem;
@@ -102,11 +113,31 @@ svg {
 .main-nav {
   padding-right: 24px;
   justify-content:flex-end;
+  /* transform: translate(0rem, 0.08rem); */
+}
+
+.main-nav a {
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
-  color: #6c6c6c;
-  transform: translate(0rem, 0.08rem);
+  transition: color 120ms ease-in;
 }
+
+.main-nav a:link {
+  color: #6c6c6c;
+}
+
+.main-nav a:visited {
+  color: #6c6c6c;
+}
+
+.main-nav a:hover {
+  color: #ff8a34;
+}
+
+.main-nav a:active {
+  color: #d26400;
+}
+
 
 .main-nav span{
   padding-left: 1rem;
@@ -145,7 +176,12 @@ main {
 }
 
 main section:nth-child(odd) {
-  background-color: #ff8a34;
+  /* background-color: #ff8a34; */
+  background: #ffa435;
+  background: -moz-linear-gradient(top, #ffa435 0%, #ff8a34 100%);
+  background: -webkit-linear-gradient(top, #ffa435 0%,#ff8a34 100%);
+  background: linear-gradient(to bottom, #ffa435 0%,#ff8a34 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffa435', endColorstr='#ff8a34',GradientType=0 );
   color: #fff;
 }
 
@@ -224,7 +260,7 @@ img {
 }
 
 .cta {
-  background-color: none;
+  background-color: transparent;
   border: 0.08rem solid #fff;
   text-align: center;
   padding: 1rem;
@@ -294,13 +330,10 @@ img {
     margin-right:1rem;
   }
 
-  .keep-practicing h2 {
+  .highlight h2 {
     text-align: left;
   }
 
-  .selected-event {
-    background-color: #4c4c4c;
-  }
 }
 
 @media only screen and (min-width:1200px) {
@@ -329,6 +362,7 @@ img {
 }
 
 .event {
+  box-sizing: border-box;
   padding: 1rem;
 }
 
@@ -348,6 +382,19 @@ img {
 
 .event-description p {
   padding: 0.5rem 0;
+}
+
+.event a {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+}
+
+.event a:link, .event a:visited {
+  color: #ff8a34;
+}
+
+.event a:active {
+  color: #d26400;
 }
 
 @media only screen and (min-width:640px) {
@@ -391,11 +438,14 @@ img {
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    transition: all 120ms ease-in;
  }
 
-  #firstevent {
-    padding-top: 0;
-  }
+ .event:hover {
+   -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.18);
+   -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.18);
+   box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.18);
+ }
 
   .event + .event {
     padding-left: 1rem;
@@ -498,11 +548,13 @@ img {
   }
 
   .coursesfull-item {
-    background-color: #fff;
-    color: #4c4c4c;
+    background-color: rgba(255, 255, 255, 0.1);
     margin-right: 2rem;
     overflow: hidden;
     width: 100%;
+    -webkit-box-shadow: 4px 4px 14px 2px rgba(148,62,0,0.32);
+    -moz-box-shadow: 4px 4px 14px 2px rgba(148,62,0,0.32);
+    box-shadow: 4px 4px 14px 2px rgba(148,62,0,0.32);
   }
 
   .course-description {
@@ -538,6 +590,9 @@ video {
   margin-top: 1rem;
 }
 
+.quote h3 {
+  padding-bottom: 1.5rem;
+}
 
 @media only screen and (min-width:1000px) {
   .thesis-row{
@@ -560,7 +615,26 @@ footer {
   width: 100%;
 }
 
-.footer-content p {
-  font-size: 1rem;
+.copyright {
   padding: 1rem 1.5rem;
+}
+
+.legal {
+  display: none;
+}
+
+.legal span {
+  padding-right: 1rem;
+}
+
+@media only screen and (min-width:1000px) {
+  .footer-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .legal {
+    display: block;
+  }
 }
