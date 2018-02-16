@@ -7,17 +7,12 @@ html {
 }
 
 body {
-  font-family: "Gentium Basic", serif;
+  font-family: "Open Sans", sans-serif;
   background-color: #f7f7f7;
   color: #4c4c4c;
 }
 
-b {
-  font-weight: bold;
-}
-
 h1, h2, h3, h4 {
-  font-family: "Open Sans", sans-serif;
   font-weight: bold;
 }
 
@@ -40,7 +35,8 @@ h4 {
 }
 
 p {
-  font-size: 1.2rem;
+  font-family: Lora, serif;
+  font-size: 1rem;
   line-height: 1.4rem;
 }
 
@@ -97,10 +93,11 @@ svg:active {
 }
 
 .logo {
-  padding-left: 24px;
+  padding-left: 1.5rem;
 }
 
 #colmar {
+  font-family: "Gentium Basic";
   font-size: 1.7rem;
   font-weight: bold;
   padding-left: 0.35rem;
@@ -109,7 +106,6 @@ svg:active {
 }
 
 #academy {
-  font-family: "open sans";
   font-size: 1.45rem;
   font-weight: 600;
   padding-left: 0.1rem;
@@ -118,12 +114,11 @@ svg:active {
 }
 
 .main-nav {
-  padding-right: 24px;
+  padding-right: 1.5rem;
   justify-content:flex-end;
 }
 
 .main-nav a {
-  font-family: "Open Sans", sans-serif;
   font-weight: 600;
   transition: color 120ms ease-in;
 }
@@ -253,6 +248,7 @@ img {
   padding-top: 2rem;
   padding-bottom: 1.5rem;
   font-size: 1.6rem;
+  line-height: 1.8rem;
   opacity: 0.75;
 }
 
@@ -271,7 +267,6 @@ img {
 }
 
 .cta span {
-  font-family: "Open Sans", sans-serif;
   font-size: 1.2rem;
   font-weight: 600;
   text-transform: capitalize;
@@ -294,6 +289,28 @@ img {
 
 .highlight {
   display: block;
+}
+
+@media only screen and (min-width:1000px) {
+  .highlight {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-right:1rem;
+  }
+
+  .highlight h2 {
+    text-align: left;
+  }
+}
+
+@media only screen and (min-width:1200px) {
+    .highlight {
+      width: 60%;
+      display: flex;
+      flex-direction: column;
+      margin-right: 1.5rem;
+    }
 }
 
 .banner {
@@ -319,28 +336,6 @@ img {
   }
 }
 
-@media only screen and (min-width:1000px) {
-  .highlight {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    margin-right:1rem;
-  }
-
-  .highlight h2 {
-    text-align: left;
-  }
-
-}
-
-@media only screen and (min-width:1200px) {
-    .highlight {
-      width: 60%;
-      display: flex;
-      flex-direction: column;
-      margin-right: 1.5rem;
-    }
-}
 
 .quote {
   display: none;
@@ -349,6 +344,9 @@ img {
 
 .quote span {
   padding-top: 1rem;
+  font-family: lora;
+  font-weight: bold;
+  font-size: 0.875rem;
 }
 
 @media only screen and (min-width:1000px) {
@@ -382,7 +380,6 @@ img {
 }
 
 .event a {
-  font-family: "Open Sans", sans-serif;
   font-weight: 600;
 }
 
@@ -436,13 +433,13 @@ img {
     align-items: center;
     justify-content: flex-start;
     transition: all 120ms ease-in;
- }
+  }
 
- .event:hover {
-   -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.18);
-   -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.18);
-   box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.18);
- }
+  .event:hover {
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.18);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.18);
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.18);
+  }
 
   .event + .event {
     padding-left: 1rem;
@@ -461,15 +458,12 @@ img {
 
 }
 
-
-
 /* ============================ */
 /* Third Section */
 
 .courselist {
   margin-top: 1rem;
 }
-
 
 .courses {
   padding: 1rem 1rem 1.5rem 1rem;
@@ -563,7 +557,6 @@ img {
   }
 }
 
-
 /* ============================ */
 /* Thesis section */
 
@@ -610,6 +603,8 @@ video {
 
 footer {
   width: 100%;
+  font-family: Lora, serif;
+  font-size: 0.875rem;
 }
 
 .copyright {
